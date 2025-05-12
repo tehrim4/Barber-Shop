@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fama Barber Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/Images/icon.jpg" alt="Fama Logo" />
+      </div>
+      <nav class="navbar" id="navbar">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#service">Our Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <i class="fa fa-moon" id="themeIcon"></i>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Fama Barber Shop & Beauty Salon</h1>
+        <p>⭐ 4.6 stars (116+ reviews) | Open Now</p>
+        <a href="#book" class="btn">Book an Appointment</a>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <h2>About Fama Barber Shop & Beauty Salon</h2>
+      <p>
+        We provide professional grooming services for both men and women.
+        Whether you're here for a quick cut, shave, or full styling service, our
+        expert barbers and beauticians will ensure you leave looking your best.
+        Experience a comfortable and stylish atmosphere with quality services.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="service">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>Haircuts</h3>
+          <p>
+            Get the latest haircuts, whether it's a classic or trendy style. We
+            offer cuts for men, women, and children.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Shaves</h3>
+          <p>
+            Experience a professional shave that leaves your skin feeling smooth
+            and fresh. We use the best products for your skin type.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Hair Coloring</h3>
+          <p>
+            Want a new look? We offer professional hair coloring services with
+            top-notch products for vibrant and long-lasting results.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>Our Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/service1.jpg" alt="Service 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/service2.jpg" alt="Service 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/service3.jpg" alt="Service 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/service4.jpg" alt="Service 4" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <h2 class="section-title">What Our Clients Say</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <p class="stars">⭐️⭐️⭐️⭐️⭐️</p>
+          <p>"Best in town! The barbers are friendly and professional."</p>
+          <p class="client-name">— Michael R.</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="stars">⭐️⭐️⭐️⭐️⭐️</p>
+          <p>"I always leave feeling fresh and confident!"</p>
+          <p class="client-name">— Jason M.</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="stars">⭐️⭐️⭐️⭐️⭐️</p>
+          <p>"They were amazing with my son's first haircut!"</p>
+          <p class="client-name">— Linda T.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form" action="/submit_form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map">
+      <h2>Find Us Here</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.1341791172877!2d-71.0588809!3d42.360081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a23b430c2db%3A0xd71013ab2f1a76f2!2sFama%20Barber%20Shop!5e0!3m2!1sen!2sus!4v1676882725257!5m2!1sen!2sus"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <!-- Appointment Booking Section -->
+    <section id="book">
+      <h2>Book an Appointment</h2>
+      <form
+        class="booking-form"
+        action="mailto:your-email@example.com"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="service">Service Type:</label>
+        <select id="service" name="service" required>
+          <option value="Haircut">Haircut</option>
+          <option value="Shave">Shave</option>
+          <option value="Hair Coloring">Hair Coloring</option>
+        </select>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required />
+
+        <button type="submit" class="btn">Book Appointment</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Fama Barber Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const themeIcon = document.getElementById("themeIcon");
+      const hamburger = document.getElementById("hamburger");
+      const navbar = document.getElementById("navbar");
+
+      themeIcon.addEventListener("click", () => {
+        document.body.classList.toggle("dark-theme");
+        themeIcon.classList.toggle("fa-sun");
+        themeIcon.classList.toggle("fa-moon");
+      });
+
+      hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
